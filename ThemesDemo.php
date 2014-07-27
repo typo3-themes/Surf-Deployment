@@ -59,7 +59,7 @@ $workflow->defineTask(
 	'themes.demo:import.database',
 	'typo3.surf:shell',
 	array(
-		'command' => 'mysql --user=secretUser --password=secretPassword --host=mysql5.kay-strobach.de db417675_12 < {releasePath}/serverdata/data/sql/t3-latest.sql',
+		'command' => 'mysql --user=secretUser --password=secretPassword --host=hostname dbName < {releasePath}/serverdata/data/sql/t3-latest.sql',
 		'logOutput' => TRUE
 	)                // <- fill in dbuser and password
 );
